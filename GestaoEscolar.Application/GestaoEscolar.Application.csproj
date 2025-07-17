@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GestaoEscolar.Communication\GestaoEscolar.Communication.csproj" />
+    <ProjectReference Include="..\GestaoEscolar.Domain\GestaoEscolar.Domain.csproj" />
+    <ProjectReference Include="..\GestaoEscolar.Exception\GestaoEscolar.Exception.csproj" />
+  </ItemGroup>
+
+</Project>

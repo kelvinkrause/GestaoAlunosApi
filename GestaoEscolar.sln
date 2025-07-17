@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36121.58
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestaoEscolar.Api", "GestaoEscolar.Api\GestaoEscolar.Api.csproj", "{ADABCDD3-B262-4AFD-91CB-9639B1820D09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestaoEscolar.Domain", "GestaoEscolar.Domain\GestaoEscolar.Domain.csproj", "{8DF3DC1D-DB58-437B-A489-FB2BBA9793CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestaoEscolar.Infrastructure", "GestaoEscolar.Infrastructure\GestaoEscolar.Infrastructure.csproj", "{78B2B4AD-34E9-4E7B-9761-3A8F82A9636C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestaoEscolar.Application", "GestaoEscolar.Application\GestaoEscolar.Application.csproj", "{4A68215F-74E8-4AEF-BAF1-B3FCB5668070}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestaoEscolar.Communication", "GestaoEscolar.Communication\GestaoEscolar.Communication.csproj", "{54928934-68DD-403C-89D9-B12CE9786255}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestaoEscolar.Exception", "GestaoEscolar.Exception\GestaoEscolar.Exception.csproj", "{CAFB9B62-1BD7-4BB5-989E-9EF689BA545D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ADABCDD3-B262-4AFD-91CB-9639B1820D09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADABCDD3-B262-4AFD-91CB-9639B1820D09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADABCDD3-B262-4AFD-91CB-9639B1820D09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADABCDD3-B262-4AFD-91CB-9639B1820D09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DF3DC1D-DB58-437B-A489-FB2BBA9793CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DF3DC1D-DB58-437B-A489-FB2BBA9793CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DF3DC1D-DB58-437B-A489-FB2BBA9793CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DF3DC1D-DB58-437B-A489-FB2BBA9793CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78B2B4AD-34E9-4E7B-9761-3A8F82A9636C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78B2B4AD-34E9-4E7B-9761-3A8F82A9636C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78B2B4AD-34E9-4E7B-9761-3A8F82A9636C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78B2B4AD-34E9-4E7B-9761-3A8F82A9636C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A68215F-74E8-4AEF-BAF1-B3FCB5668070}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A68215F-74E8-4AEF-BAF1-B3FCB5668070}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A68215F-74E8-4AEF-BAF1-B3FCB5668070}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A68215F-74E8-4AEF-BAF1-B3FCB5668070}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54928934-68DD-403C-89D9-B12CE9786255}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54928934-68DD-403C-89D9-B12CE9786255}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54928934-68DD-403C-89D9-B12CE9786255}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54928934-68DD-403C-89D9-B12CE9786255}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAFB9B62-1BD7-4BB5-989E-9EF689BA545D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAFB9B62-1BD7-4BB5-989E-9EF689BA545D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAFB9B62-1BD7-4BB5-989E-9EF689BA545D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAFB9B62-1BD7-4BB5-989E-9EF689BA545D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FDE68A31-40B4-4A37-8712-3859683E70FC}
+	EndGlobalSection
+EndGlobal
