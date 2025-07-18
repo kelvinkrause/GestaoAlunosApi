@@ -23,10 +23,10 @@ namespace GestaoEscolar.Application.UseCases.AtualizarDadosAlunoEMatriculas
             var aluno = await _alunoRepository.ObterPorIdAsync(request.Id);
 
             if (aluno is null)
-                throw new ErrorOnValidationException([ "Aluno não encontrado." ] );
+                throw new ErrorOnValidationException(["Aluno não encontrado."]);
 
             aluno.AtualizarDadosAlunoEMatriculas(
-                request.Nome, 
+                request.Nome,
                 request.Telefone);
 
             foreach (var matricula in request.Matriculas)

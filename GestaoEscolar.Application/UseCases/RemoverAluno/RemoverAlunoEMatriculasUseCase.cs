@@ -21,7 +21,7 @@ namespace GestaoEscolar.Application.UseCases.RemoverAluno
             var aluno = await _alunoRepository.ObterPorIdAsync(id);
 
             if (aluno is null)
-                throw new ErrorOnValidationException([ "Aluno não encontrado." ]);
+                throw new ErrorOnValidationException(["Aluno não encontrado."]);
 
             await _alunoRepository.RemoverAsync(aluno.Id);
         }

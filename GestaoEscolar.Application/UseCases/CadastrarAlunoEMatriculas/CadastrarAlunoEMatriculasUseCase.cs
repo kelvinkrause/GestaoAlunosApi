@@ -46,7 +46,7 @@ namespace GestaoEscolar.Application.UseCases.CadastrarAlunoEMatriculas
                     NomeCurso = matricula.NomeCurso
                 }).ToList()
             };
-            
+
         }
     }
 }

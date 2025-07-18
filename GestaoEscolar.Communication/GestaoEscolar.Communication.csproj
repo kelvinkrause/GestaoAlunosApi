@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\GestaoEscolar.Domain\GestaoEscolar.Domain.csproj" />
+    <ProjectReference Include="..\GestaoEscolar.Exception\GestaoEscolar.Exception.csproj" />
   </ItemGroup>
 
 </Project>

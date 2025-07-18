@@ -6,12 +6,12 @@ namespace GestaoEscolar.Domain.Entities
     {
         public Guid Id { get; private set; } = Guid.NewGuid();
         public string Nome { get; private set; } = string.Empty;
-        public string Telefone {  get; private set; } = string.Empty;
+        public string Telefone { get; private set; } = string.Empty;
         public DateTime DataInclusao { get; private set; } = DateTime.UtcNow;
 
         private readonly List<Matricula> _matriculas = new();
         public IReadOnlyCollection<Matricula> Matriculas => _matriculas.AsReadOnly();
-        
+
         //DDD (Driven-Domain Design)
         public Aluno() { }
 
@@ -44,19 +44,19 @@ namespace GestaoEscolar.Domain.Entities
 
             return this;
         }
-        
+
         public void AtualizarDadosAlunoEMatriculas(string nome, string telefone)
         {
             var erros = new List<string>();
             var matriculasNovas = new List<Matricula>();
 
-            if (string.IsNullOrWhiteSpace(nome)) 
+            if (string.IsNullOrWhiteSpace(nome))
                 erros.Add("Nome não informado.");
 
             if (string.IsNullOrWhiteSpace(telefone))
                 erros.Add("Telefone não informado.");
 
-            if(erros.Any())
+            if (erros.Any())
                 throw new ErrorOnValidationException(erros);
 
             this.Nome = nome;

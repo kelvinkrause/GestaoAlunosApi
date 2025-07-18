@@ -1,6 +1,6 @@
 ﻿using System.Net;
 
-namespace GestaoAlunos.Exception
+namespace GestaoEscolar.Exception
 {
     public abstract class GestaoEscolarException : System.Exception
     {

@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\GestaoAlunos.Exception\GestaoEscolar.Exception.csproj" />
     <ProjectReference Include="..\GestaoEscolar.Exception\GestaoEscolar.Exception.csproj" />
   </ItemGroup>
 

@@ -1,11 +1,11 @@
-﻿using GestaoAlunos.Exception;
-using GestaoEscolar.Application.UseCases.AtualizarDadosAlunoEMatriculas;
+﻿using GestaoEscolar.Application.UseCases.AtualizarDadosAlunoEMatriculas;
 using GestaoEscolar.Application.UseCases.CadastrarAlunoEMatriculas;
 using GestaoEscolar.Application.UseCases.ListarAlunosCadastrados;
 using GestaoEscolar.Application.UseCases.ListarMatriculasPorAluno;
 using GestaoEscolar.Application.UseCases.RemoverAluno;
 using GestaoEscolar.Communication.Requests;
 using GestaoEscolar.Communication.Responses;
+using GestaoEscolar.Exception;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GestaoEscolar.Api.Controllers
@@ -108,7 +108,7 @@ namespace GestaoEscolar.Api.Controllers
                 {
                     Errors = exception.GetErrorMessage()
                 });
-            } 
+            }
         }
 
         [ProducesResponseType(typeof(string), StatusCodes.Status200OK)]

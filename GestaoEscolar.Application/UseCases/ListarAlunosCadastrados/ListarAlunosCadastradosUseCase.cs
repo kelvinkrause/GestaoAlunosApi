@@ -16,7 +16,7 @@ namespace GestaoEscolar.Application.UseCases.ListarAlunosCadastrados
             var alunos = await _alunoRepository.ObterTodosAsync();
 
             if (!alunos.Any())
-                throw new ErrorOnValidationException([ "Não encontrou registro de alunos." ]);
+                throw new ErrorOnValidationException(["Não encontrou registro de alunos."]);
 
             var response = alunos.Select(aluno => new ResponseAluno
             {
@@ -25,9 +25,9 @@ namespace GestaoEscolar.Application.UseCases.ListarAlunosCadastrados
                 Telefone = aluno.Telefone,
                 DataInclusao = aluno.DataInclusao
             }).ToList();
-            
+
             return response;
-            
+
         }
     }
 }

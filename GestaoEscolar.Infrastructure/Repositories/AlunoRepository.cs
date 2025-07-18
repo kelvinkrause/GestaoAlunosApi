@@ -8,7 +8,7 @@ namespace GestaoEscolar.Infrastructure.Repositories
     public class AlunoRepository : IAlunoRepository
     {
         private readonly AppDbContext _context;
-        public AlunoRepository(AppDbContext context) 
+        public AlunoRepository(AppDbContext context)
         {
             _context = context;
         }
@@ -36,12 +36,12 @@ namespace GestaoEscolar.Infrastructure.Repositories
             return await _context.Alunos
                 .Include(m => m.Matriculas)
                 .ToListAsync();
-        }    
+        }
 
         public async Task RemoverAsync(Guid id)
         {
             var aluno = await ObterPorIdAsync(id);
-            if(aluno is not null)
+            if (aluno is not null)
             {
                 _context.Alunos.Remove(aluno);
                 await _context.SaveChangesAsync();

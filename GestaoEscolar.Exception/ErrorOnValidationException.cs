@@ -1,5 +1,4 @@
-﻿using GestaoAlunos.Exception;
-using System.Net;
+﻿using System.Net;
 
 namespace GestaoEscolar.Exception
 {

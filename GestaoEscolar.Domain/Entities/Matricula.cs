@@ -5,7 +5,7 @@ namespace GestaoEscolar.Domain.Entities
     public class Matricula
     {
         public Guid Id { get; private set; }
-        public int CodigoMatricula {  get; private set; }
+        public int CodigoMatricula { get; private set; }
         public string NomeCurso { get; private set; } = string.Empty;
         public Guid AlunoId { get; private set; } = Guid.Empty;
         public Aluno Aluno { get; private set; } = null!;
@@ -30,7 +30,7 @@ namespace GestaoEscolar.Domain.Entities
         public void AtualizarCurso(string nomeCurso)
         {
             if (string.IsNullOrWhiteSpace(nomeCurso))
-                throw new ErrorOnValidationException([ "Nome curso não informado" ]);
+                throw new ErrorOnValidationException(["Nome curso não informado"]);
 
             NomeCurso = nomeCurso;
 

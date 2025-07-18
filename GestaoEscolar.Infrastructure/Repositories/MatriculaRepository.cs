@@ -28,7 +28,7 @@ namespace GestaoEscolar.Infrastructure.Repositories
         public async Task RemoverAsync(Guid id)
         {
             var matricula = await ObterPorIdAsync(id);
-            if(matricula is not null)
+            if (matricula is not null)
             {
                 _context.Matriculas.Remove(matricula);
                 await _context.SaveChangesAsync();
